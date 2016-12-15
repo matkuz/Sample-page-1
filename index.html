@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="PL">
+<head>
+    <meta charset = "UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mateusz Kuźma">
+    <title> Sample Page 1 </title>
+<!--Fonts-->    
+    <link href="css/site/font-awesome/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<!--jQuery-->
+    <script src="js/site/jquery.min.js"></script>
+<!--Bootstrap-->
+    <link rel="stylesheet" href="css/site/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/site/bootstrap/css/bootstrap-theme.min.css">
+    <script src="js/site/bootstrap/js/bootstrap.min.js"></script>
+<!--Pace-->
+    <script src="js/site/plugins/pace/pace.min.js"></script>
+<!--Style-->
+    <link rel="stylesheet" type="text/css" href="css/site/master.css">
+    <link rel="stylesheet" type="text/css" href="css/site/hamburgers.min.css">
+    <link href="css/site/hover-min.css" rel="stylesheet" media="all">
+</head>
+<body>
+    <header class="wrapper headerWrapper">
+        <div class="container">
+            <div class="row">
+                <div id="headerTop" class="headerTop">
+                    <div class="col-sm-3 col-xs-8">
+                        <div class="logo">
+                            <a href="#">
+                                <img src="img/site/header/headerLogo.png" alt="logo"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hidden-lg hidden-md hidden-sm col-xs-4">
+                        <button id="hamburger" class="hamburger hamburger--collapse" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="col-sm-9 hidden-xs">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Top destination</a></li>
+                                <li><a href="#">Add your boat</a></li>
+                                <li class="login"><a href="#">Sign up</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="headerContent">
+            <div class="container">
+                <h1>RESERVE A BOAT NOW!</h1>
+                <p class="subtitle">and set your sails into paradise!</p>
+            <!--find boat input-->
+                <div class="form-group">
+                    <input name="text" type="text" id="text" placeholder="What is your DESTINATION, SAILOR?"/>
+                    <button class="" type="submit"><i class="fa fa-ship"></i>Find a boat</button>
+                </div>
+            </div>
+        </div>
+        <div class="headerBottom">
+            <div class="container">
+                <ul>
+                    <li>
+                        <p class="headerBottomNumber">2,300</p>
+                        <p class="headerBottomDescribe">Destination</p>
+                    </li>
+                    <li>
+                        <p class="headerBottomNumber">1,000</p>
+                        <p class="headerBottomDescribe">Cities</p>
+                    </li>
+                    <li>
+                        <p class="headerBottomNumber">35,000</p>
+                        <p class="headerBottomDescribe">Boats</p>
+                    </li>
+                    <li>
+                        <p class="headerBottomNumber">50,000</p>
+                        <p class="headerBottomDescribe">Sailors</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="wrapper exploreWrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <h2>EXPLORE OUR TOP DESTINATIONS</h2>
+                    <p class="sectionTitleSubtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <a class="exploreWrapperDestinationBox">
+                        <img src="img/site/explore/exploreImg1.jpg" alt="Figueira da Foz"/>
+                        <div class="boxOfNumber">
+                            <i class="fa fa-ship"></i>
+                            <p>730</p>
+                        </div>
+                        <div class="describeBox">
+                            <p class="describeBoxPortName">Figueira da Foz</p>
+                            <p class="describeBoxPlace">Portugal</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a class="exploreWrapperDestinationBox">
+                        <img src="img/site/explore/exploreImg2.jpg" alt="Figueira da Foz"/>
+                        <div class="boxOfNumber">
+                            <i class="fa fa-ship"></i>
+                            <p>621</p>
+                        </div>
+                        <div class="describeBox">
+                            <p class="describeBoxPortName">Ibiza</p>
+                            <p class="describeBoxPlace">Spain</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <a class="exploreWrapperDestinationBox">
+                        <img src="img/site/explore/exploreImg3.jpg" alt="Figueira da Foz"/>
+                        <div class="boxOfNumber">
+                            <i class="fa fa-ship"></i>
+                            <p>543</p>
+                        </div>
+                        <div class="describeBox">
+                            <p class="describeBoxPortName">Palma de Mallorca</p>
+                            <p class="describeBoxPlace">Spain</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a class="exploreWrapperDestinationBox">
+                        <img src="img/site/explore/exploreImg4.jpg" alt="Figueira da Foz"/>
+                        <div class="boxOfNumber">
+                            <i class="fa fa-ship"></i>
+                            <p>495</p>
+                        </div>
+                        <div class="describeBox">
+                            <p class="describeBoxPortName">Portofino</p>
+                            <p class="describeBoxPlace">Italy</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a class="exploreWrapperDestinationBox">
+                        <img src="img/site/explore/exploreImg5.jpg" alt="Figueira da Foz"/>
+                        <div class="boxOfNumber">
+                            <i class="fa fa-ship"></i>
+                            <p>402</p>
+                        </div>
+                        <div class="describeBox">
+                            <p class="describeBoxPortName">Port Hercules</p>
+                            <p class="describeBoxPlace">Monaco</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="exploreMoreBox">
+                        <button class="exploreMoreBtn">
+                            EXPLORE MORE DESTINATIONS
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="wrapper ownBoatWrapper">
+        <div class="container">
+            <h3>HAVE YOUR OWN BOAT?</h3>
+            <p class="ownBoatSubtitle">navigare necesse est, vivere non est necesse</p>
+            <button class="makeMoneyBtn">
+                Make money with your boat
+            </button>
+        </div>
+    </section>
+    <section class="wrapper featuredWrapper">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-sm-8 col-sm-offset-2">
+                    <h2>FEATURED BOATS</h2>
+                    <p class="sectionTitleSubtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <a class="featuredWrapperBoatBox">
+                        <img src="img/site/featured/featuredBoatImg1.jpg" alt="Delphia 47"/>
+                        <div class="boxOfPrice">
+                            <p>€580 / day</p>
+                        </div>
+                        <div class="describeBox">
+                            <p class="describeBoxBoatName">Delphia 47</p>
+                            <p class="describeBoxBerths">
+                                <i class="fa fa-map-marker"></i>
+                                Gdańsk, Poland
+                                <i class="fa fa-users"></i>
+                                8 Berths
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6">
+                    <a class="featuredWrapperBoatBox">
+                        <img src="img/site/featured/featuredBoatImg2.jpg" alt="Sense 55"/>
+                        <div class="boxOfPrice">
+                            <p>€950 / day</p>
+                        </div>
+                        <div class="describeBox">
+                            <p class="describeBoxBoatName">Sense 55</p>
+                            <p class="describeBoxBerths">
+                                <i class="fa fa-map-marker"></i>
+                                Portofino, Italy
+                                <i class="fa fa-users"></i>
+                                12 Berths
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <a class="featuredWrapperBoatBox">
+                        <img src="img/site/featured/featuredBoatImg3.jpg" alt="Crusier 51"/>
+                        <div class="boxOfPrice">
+                            <p>€820/ day</p>
+                        </div>
+                        <div class="describeBox">
+                            <p class="describeBoxBoatName">Crusier 51</p>
+                            <p class="describeBoxBerths">
+                                <i class="fa fa-map-marker"></i>
+                                Palma de Mallorca, Spain
+                                <i class="fa fa-users"></i>
+                                10 Berths
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6">
+                    <a class="featuredWrapperBoatBox">
+                        <img src="img/site/featured/featuredBoatImg4.jpg" alt="Crusier 41S"/>
+                        <div class="boxOfPrice">
+                            <p>€400/ day</p>
+                        </div>
+                        <div class="describeBox">
+                            <p class="describeBoxBoatName">Crusier 41S</p>
+                            <p class="describeBoxBerths">
+                                <i class="fa fa-map-marker"></i>
+                                Lisbon, Portugal
+                                <i class="fa fa-users"></i>
+                                8 Berths
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="featuredMoreBox">
+                        <button class="featuredMoreBtn">
+                            LOAD MORE BOATS
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="wrapper footerWrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-sm-6">
+                    <h4>Top locations</h4>
+                    <ul class="footerMenu">
+                        <li><a class="hvr-float-shadow" href="#">Lorem ipsum dolor</a></li>
+                        <li><a class="hvr-float-shadow" href="#">Lorem ipsum dolor</a></li>
+                        <li><a class="hvr-float-shadow" href="#">Lorem ipsum dolor</a></li>
+                        <li><a class="hvr-float-shadow" href="#">Lorem ipsum dolor</a></li>
+                        <li><a class="hvr-float-shadow" href="#">Lorem ipsum dolor</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <h4>Featured boats</h4>
+                    <ul class="footerMenu">
+                        <li><a class="hvr-float-shadow" href="#">Lorem ipsum dolor</a></li>
+                        <li><a class="hvr-float-shadow" href="#">Lorem ipsum dolor</a></li>
+                        <li><a class="hvr-float-shadow" href="#">Lorem ipsum dolor</a></li>
+                        <li><a class="hvr-float-shadow" href="#">Lorem ipsum dolor</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+                    <div class="form-group">
+                        <input name="text" type="text" id="text" placeholder="Your email adress"/>
+                        <button class="" type="submit">SUBSCRIBE</button>
+                    </div>
+                    <ul class="footerSocial">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <h4>Contact us</h4>
+                    <ul class="footerMenu">
+                        <li><a class="hvr-float-shadow" href="#">Lorem ipsum dolor</a></li>
+                        <li><a class="hvr-float-shadow" href="#">Lorem ipsum dolor</a></li>
+                        <li><a class="hvr-float-shadow" href="#">Lorem ipsum dolor</a></li>
+                        <li><a class="hvr-float-shadow" href="#">Lorem ipsum dolor</a></li>
+                        <li><a class="hvr-float-shadow" href="#">Lorem ipsum dolor</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--RWD navigation-->
+    <div id="sidr-nav">
+    <ul class="navRwd">
+        <li><a class="hvr-float-shadow" href="#">Top destination</a></li>
+        <li><a class="hvr-float-shadow" href="#">Add your boat</a></li>
+        <li class="login hvr-float-shadow"><a href="#">Sign up</a></li>
+    </ul>
+        </div>
+    <!--****-->
+</body>
+    <script src="js/site/jquery.sidr.min/jquery.sidr.min.js"></script>
+    <script src="js/site/app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+</html>

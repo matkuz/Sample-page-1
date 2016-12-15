@@ -1,0 +1,63 @@
+// Transformicons
+
+
+// Line transformicons
+// tr-lines
+@mixin create-lines($_size, $_color) {
+  &.tr-lines { display: block; font-size: 0;
+    .lines,
+    .lines:before,
+    .lines:after { transition: .4s; display: inline-block; @include size($_size,round($_size / 7.5)); border-radius: ($_size / 15); background: $_color; }
+
+    .lines { position: relative; }
+    .lines:before,
+    .lines:after { content: ""; position: absolute; left: 0; }
+    .lines:before { top: round($_size / 3); }
+    .lines:after { top: round($_size / -3); }
+  }
+}
+
+// tr-lines, tr-arrow-left
+@mixin create-tr-arrow-left($_size) {
+  &.tr-arrow-left {
+    .lines:before,
+    .lines:after { @include transform-origin(($_size * .055) center); }
+    &.active .lines:before,
+    &.active .lines:after { top: 0; width: ($_size * .6); }
+    &.active .lines:before { @include rotate(40deg); }
+    &.active .lines:after { @include rotate(-40deg); }
+  }
+}
+
+// tr-lines, tr-x
+@mixin x-transition() { 
+  transition: top 0.3s 0.6s ease, -webkit-transform 0.3s ease;
+  transition: top 0.3s 0.6s ease,         transform 0.3s ease;
+}
+@mixin x-lines-transition() { 
+  transition: top 0.3s ease, -webkit-transform 0.3s 0.5s ease;
+  transition: top 0.3s ease,         transform 0.3s 0.5s ease;
+}
+@mixin create-tr-x() {
+  &.tr-x { 
+    .lines:before,
+    .lines:after { @include transform-origin(50% 50%); @include x-transition; }
+    &.active .lines { transition: background 0.3s 0s ease; background: transparent; }
+    &.active .lines:before,
+    &.active .lines:after { @include x-lines-transition; top: 0; }
+    &.active .lines:before { @include rotate(45deg); }
+    &.active .lines:after { @include rotate(-45deg); }
+  }
+}
+
+
+@mixin create-transformicon($_kind, $_name, $_size: 14px, $_color: #000) {
+  .tr {
+    @if $_kind == 'tr-lines' {
+      @include create-lines($_size, $_color);
+
+      @if $_name == 'tr-arrow-left' { @include create-tr-arrow-left($_size); }
+      @if $_name == 'tr-x'          { @include create-tr-x(); }
+    }
+  }
+}

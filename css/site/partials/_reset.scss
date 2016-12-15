@@ -1,0 +1,19 @@
+h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; font-weight: normal; }
+
+ul { margin: 0; padding: 0; }
+
+a { transition: all 0.25s ease 0.1s; }
+a, a:hover, a:focus { text-decoration: none; color: inherit; cursor: pointer; outline: none; box-shadow: none; border: none; }
+
+button { border: none; outline: none; box-shadow: none;
+	&:focus { outline: none; box-shadow: none; }
+}
+.button { display: inline-block; margin: 0 0 15px; border: 0; outline: none; cursor: pointer; }
+
+img { max-width: 100%; }
+
+input,
+textarea,
+select { display: block; width: 100%; outline: none; box-shadow: none;
+	&:focus { outline: none; box-shadow: none; }
+}

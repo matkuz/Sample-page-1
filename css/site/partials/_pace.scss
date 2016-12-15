@@ -1,0 +1,8 @@
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  @include user-select(none);
+
+  .pace-progress { background: $pace-color; z-index: $z-index-pace; position: fixed; top: 0; right: 100%; @include size(100%,$pace-height); }
+}
+.pace-inactive { display: none; }

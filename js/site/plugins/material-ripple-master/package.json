@@ -1,0 +1,50 @@
+{
+  "name": "material-ripple",
+  "version": "0.2.5",
+  "description": "Material Design Ripple effect",
+  "homepage": "https://github.com/balintsoos/material-ripple",
+  "main": "src/index.js",
+  "keywords": [
+    "material",
+    "design",
+    "ripple",
+    "effect"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Balint Soos",
+    "email": "soosbalint95@gmail.com",
+    "url": "http://balintsoos.com/"
+  },
+  "contributors": [
+    {
+      "name": "Balint Soos",
+      "email": "soosbalint95@gmail.com",
+      "url": "http://balintsoos.com/"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/balintsoos/material-ripple.git"
+  },
+  "bugs": {
+    "url": "https://github.com/balintsoos/material-ripple/issues"
+  },
+  "scripts": {
+    "start": "node src/js/index.js",
+    "build": "gulp build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "jquery": "^2.2.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "cssnano": "^3.5.2",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.3"
+  }
+}

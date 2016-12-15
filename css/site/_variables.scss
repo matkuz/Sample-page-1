@@ -1,0 +1,72 @@
+// setup 
+// --------------------------------------------------
+	
+	$images: './img/site'; 
+	$icons:  './img/site/icons';
+	$fonts:  './fonts';
+	$base-color-success: #26a65b;
+	$base-color-danger:	 #cf000f;
+	$base-color-warning: #e87e04;
+	$base-color-info:    #3a539b;
+
+	// project specific
+	$default-font-size: 12px;
+	$default-font-color: black;
+	$theme-color: #00cfc3;
+
+
+// cookies
+// --------------------------------------------------
+
+	$cookies-position: fixed;
+	$cookies-top: initial;
+	$cookies-bottom: 0;
+	$cookies-background: rgba(#000,1);
+	$cookies-color: #fff;
+
+	$cookies-btn-background: #fff;
+	$cookies-btn-color: #000;
+
+
+// pace
+// --------------------------------------------------
+
+	$pace-color: black;
+	$pace-height: 2px;
+
+
+// pagination
+// --------------------------------------------------
+
+	$pagination-width: 40px;
+	$pagination-border-radius: 0;
+	$pagination-color: $default-font-color;
+	
+	$pagination-active-background: $theme-color;
+	$pagination-active-border-color: $theme-color;
+	$pagination-active-color: #fff;
+
+	$pagination-hover-background: $theme-color;
+	$pagination-hover-color: #fff;
+
+
+// z-index
+// --------------------------------------------------
+
+	$z-index-cookies: 		9000;
+	$z-index-sidr-toggle: 	8999;
+	$z-index-sidr: 			8998;
+	$z-index-pace: 			8997;
+	$z-index-social: 		1039; // below lightgallery (1040)
+	$z-index-top-wraper:	1038;
+
+
+// media queries
+// --------------------------------------------------
+
+	$screen-xxlg: 	1799px;
+	$screen-xlg: 	1499px;
+	$screen-lg: 	1199px;
+	$screen-md: 	992px;
+	$screen-sm: 	767px;
+

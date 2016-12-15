@@ -1,0 +1,7 @@
+// Images
+
+
+@mixin opacity-glitch-fix() {
+	-webkit-backface-visibility: hidden; // webkit fix
+	transform: translate3d(0px,0px,0px); // firefox fix
+}

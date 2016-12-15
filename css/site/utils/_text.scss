@@ -1,0 +1,36 @@
+// Text
+
+
+@mixin font($size, $color, $weight, $line-height, $text-transform) {
+  font-size: $size;
+  color: $color;
+  font-weight: $weight;
+  @if $line-height    != 0 { line-height: $line-height; }
+  @if $text-transform != 0 { text-transform: $text-transform; }
+}
+
+@mixin text-overflow() {
+  // Requires inline-block or block for proper styling
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin reset-text() {
+  font-family: sans-serif;
+  // We deliberately do NOT reset font-size.
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-break: auto;
+  line-height: 1em;
+  text-align: left; // Fallback for where 'start' is not supported
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  white-space: normal;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+}

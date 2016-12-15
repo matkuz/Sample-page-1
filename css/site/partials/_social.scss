@@ -1,0 +1,20 @@
+
+
+#social-panel {
+	$_icon_width: 50px;
+	$_icon_height: 50px;
+ 
+	position: fixed; z-index: $z-index-social; display: block; top: 315px; right: 0; overflow: hidden;
+
+	a { display: block; text-align: left; padding-left: 20px;}
+
+	.social-link {
+		transition: all .4s ease; position: relative; @include size(200px,$_icon_height); @include font(16px,#fff,700,$_icon_height,0); text-align: center;
+		right: -149px;
+		i { margin-right: 20px; }
+		&:hover { right: 0; }
+	}
+
+	.order { background: $theme-color; margin-bottom: 10px; }
+	.mail { background: $theme-color; }
+}

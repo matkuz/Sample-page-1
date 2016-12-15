@@ -1,0 +1,8 @@
+// Media queries
+
+
+@mixin mq($type, $size) {
+	@media (#{$type}-width: #{$size}) {
+		@content;
+	}	
+}

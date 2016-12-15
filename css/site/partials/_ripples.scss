@@ -1,0 +1,21 @@
+// Material ripple effect
+// Based on "material-ripple" by balintsoos (https://github.com/balintsoos)
+//
+// Usage example:
+// <a class="ripple" href="#">Link</a>
+
+
+.ripple { position: relative; overflow: hidden;
+  z-index: 1; // fixes overflow bug in Chrome/Opera
+}
+
+.ripple-wrapper { top: 0; left: 0; @include square(100%); border-radius: inherit; overflow: hidden; }
+
+// .ink styles - the elements which will create the ripple effect.
+// The size and position of these elements will be set by the JS code.
+.material-ink { position: absolute; background: #fff; border-radius: 50%; transform: scale(0); opacity: 0.3; }
+.material-ink.animate { @include animation(ripple .6s linear); }
+
+@include keyframes(ripple) {
+  100% { transform: scale(2.5); opacity: 0; }
+}

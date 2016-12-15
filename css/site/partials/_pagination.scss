@@ -1,0 +1,35 @@
+.pagination {
+	> li:first-child > a,
+	> li:first-child > span,
+	> li:last-child > a,
+	> li:last-child > span { border-radius: $pagination-border-radius; }
+
+	li a,
+	li span {
+		$_fs: floor($pagination-width * .3);
+		@include square($pagination-width); font-size: $_fs; line-height: 1em; text-align: center;
+		margin: 0 2px;
+		border-radius: $pagination-border-radius;
+		padding: (($pagination-width / 2)-($_fs / 2)) 0;
+		color: $pagination-color;
+	}
+
+	> li > a:focus, 
+	> li > a:hover, 
+	> li > span:focus, 
+	> li > span:hover {
+		background: $pagination-hover-background;
+		color: $pagination-hover-color;
+	}
+
+	> .active > a,
+	> .active > a:focus,
+	> .active > a:hover,
+	> .active > span,
+	> .active > span:focus,
+	> .active > span:hover {
+		border-color: $pagination-active-border-color;
+		background: $pagination-active-background;
+		color: $pagination-active-color;
+	}
+}

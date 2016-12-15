@@ -1,0 +1,37 @@
+// Sidr components
+
+
+@mixin create-sidr($_width: 100px, $_padding: 15px, $_background: #fff, $_sidr-toggle-size: 50px) {
+  .sidr {
+    $_headline-height: $_sidr-toggle-size + $_padding;
+
+    display: none; position: fixed; top: 0; z-index: $z-index-sidr; @include size($_width,100%); overflow-x: hidden; 
+    border-right: 1px solid #5e5e5e; box-shadow: 0 0 10px #5e5e5e;
+    padding: $_headline-height $_padding $_padding;
+    background: $_background;
+    .sidr-inner { padding: $_padding 0; border-top: 1px solid darken($_background, 7%); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+      &:first-of-type { margin-top: 0px; }
+    }
+
+    &:before { 
+      $_height: 0;
+      content: ""; position: absolute; top: $_headline-height - $_height + 3px;
+      @include font($_height,$default-font-color,700,$_height,uppercase);
+    }
+    &.left { left: -$_width; right: auto; &:before { left: $_sidr-toggle-size + 2*$_padding; } }
+    &.right { left: auto; right: -$_width; }
+  }
+}
+
+@mixin create-sidr-toggle($_size: 50px, $_background: rgba($theme-color,0.5), $_offset: 15px) {
+  .sidr-toggle { 
+    transition: none; display: block; position: fixed; top: $_offset; cursor: pointer;
+    @include square($_size); z-index: $z-index-sidr-toggle;
+    padding: ($_size * .46) ($_size * .2);
+    background: $_background;
+    &.left { left: $_offset; }
+    &.right { right: $_offset; }
+
+    @include create-transformicon('tr-lines','tr-arrow-left',($_size * .6),#fff);
+  }
+}
